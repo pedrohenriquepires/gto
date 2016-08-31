@@ -1,0 +1,35 @@
+.logo {
+	animation: logoInit 1s forwards 1 ease-out;
+	will-change: opacity transform;
+	width: 100%;
+	text-align: center;
+}
+
+.clock {
+	animation: clockInit 1s .3s forwards 1 ease-out;
+	opacity: 0;
+}
+
+@keyframes logoInit{
+	from {
+		transform: translateY(-10px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes clockInit{
+	from {
+		transform: translateY(10px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}

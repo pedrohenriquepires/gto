@@ -1,0 +1,31 @@
+{
+	"name": "GTOBR",
+	"version": "1.0.0",
+	"description": "GTO - BR Site",
+	"main": "index.js",
+	"scripts": {
+		"deploy:dev": "gulp copy:cname && gulp && surge dist",
+		"deploy:prod": "gulp copy:cname && gulp && surge dist --domain=www.gto-br.com",
+		"server": "angularserver --dir ./dist"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"gulp": "^3.9.1",
+		"gulp-angular-filesort": "^1.1.1",
+		"gulp-autoprefixer": "^3.1.0",
+		"gulp-inject": "^4.0.0",
+		"gulp-jshint": "^2.0.0",
+		"gulp-minify-css": "^1.2.4",
+		"gulp-rename": "^1.2.2",
+		"gulp-sass": "^2.3.1",
+		"jshint": "^2.9.2",
+		"jshint-stylish": "^2.2.0",
+		"simple-angular-server": "^0.3.12",
+		"stream-series": "^0.1.1"
+	},
+	"dependencies": {
+		"gulp-concat": "^2.6.0",
+		"gulp-uglify": "^2.0.0"
+	}
+}
