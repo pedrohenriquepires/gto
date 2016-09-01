@@ -10,6 +10,24 @@
 	opacity: 0;
 }
 
+hr {
+	margin: 30px 0 -10px 0;
+    border-top: 1px solid #494250;
+	animation: hrInit .5s .6s forwards 1 ease-out;
+	transform: scaleX(0);
+}
+
+@keyframes hrInit{
+	from {
+		transform: scaleX(0);
+	}
+
+	to {
+		transform: scaleX(1);
+	}
+}
+
+
 @keyframes logoInit{
 	from {
 		transform: translateY(-10px);
